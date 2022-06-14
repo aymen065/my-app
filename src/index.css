@@ -1,0 +1,20 @@
+html{
+  font-size: 62.5%;
+}
+
+body {
+ 
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue','Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    color: rgb(46, 46, 46);
+  
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  display: block;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
