@@ -35,7 +35,7 @@ const Contact = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
         setLetterClass('text-animate-hover');
-    }, 4000);
+    }, 3000);
 
     return () => {
         clearTimeout(timer);

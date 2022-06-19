@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react'
 import {
   faAngular,
   faCss3,
-  faGitAlt,
   faHtml5,
   faJsSquare,
+  faNode,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
@@ -31,8 +31,8 @@ const About = () => {
   return (
     <>
       <div className="container about-page">
-        <div className="text-zone">
-          <h1>
+        <div id="text-zone">
+          <h1 className='espace'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
@@ -49,9 +49,8 @@ const About = () => {
             improving my chops one design problem at a time.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            If I need to define myself in one sentence that would be a curious student
+            , helpful teacher and tech-obsessed!!!
           </p>
         </div>
 
@@ -73,7 +72,7 @@ const About = () => {
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faNode} color="#EC4D28" />
             </div>
           </div>
         </div>
