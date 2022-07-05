@@ -15,14 +15,15 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
+    
     emailjs
       .sendForm(
         'gmail',
-        'template_YeJhZkgb',
-        form.current,
-        ''
+        'template_exx4pat',
+        e.target,
+        "DpPdpxQ--5M-syP4t"
       )
-      .then(
+     .then(
         () => {
           alert('Message successfully sent!')
           window.location.reload(false)
@@ -59,7 +60,7 @@ const Contact = () => {
             don't hesitate to contact me using below form either.
           </p>
           <div className="container contact-form">
-            <form ref={form} onSubmit={sendEmail} >
+            <form name={form} onSubmit={sendEmail} >
             <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
