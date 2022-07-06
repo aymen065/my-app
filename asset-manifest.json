@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.608fe5fe.css",
-    "main.js": "/my-app/static/js/main.68a49b65.js",
+    "main.js": "/my-app/static/js/main.6ce6373c.js",
     "static/js/787.1ed0c42c.chunk.js": "/my-app/static/js/787.1ed0c42c.chunk.js",
     "static/media/Aymen.png": "/my-app/static/media/Aymen.7740517d466ef2736ba9.png",
     "static/media/helvetica-neu.ttf": "/my-app/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
@@ -9,11 +9,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/my-app/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/my-app/index.html",
     "main.608fe5fe.css.map": "/my-app/static/css/main.608fe5fe.css.map",
-    "main.68a49b65.js.map": "/my-app/static/js/main.68a49b65.js.map",
+    "main.6ce6373c.js.map": "/my-app/static/js/main.6ce6373c.js.map",
     "787.1ed0c42c.chunk.js.map": "/my-app/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.608fe5fe.css",
-    "static/js/main.68a49b65.js"
+    "static/js/main.6ce6373c.js"
   ]
 }
