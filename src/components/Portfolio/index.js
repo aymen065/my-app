@@ -3,6 +3,10 @@ import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import portfolioData from '../../data/portfolio.json';
+import cv1 from '../../Assest/image/cv1.png'
+import cv2 from '../../Assest/image/2.png'
+import CloseIcon from '@material-ui/icons/Close';
+
 
 const Portfolio = () => { 
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -46,6 +50,14 @@ const Portfolio = () => {
         );
     }*/
 
+    const [model , setModel] = useState(false);
+    const [tempImgSrc , setTempImgSrc] = useState('');
+    const getImg = (image) =>{
+
+        console.warn(image);
+    setTempImgSrc(image);
+    setModel(true);
+    }
 
     return (
         <>
@@ -57,6 +69,16 @@ const Portfolio = () => {
                         idx={15}
                     />
                 </h1>
+                <div onClick={()=> getImg(cv1)} className="imdiv">
+                <img src={cv1} alt="Software Engineering Student"></img>
+                </div>
+                <div onClick={()=> getImg(cv2)} className="imdiv">
+                <img src={cv2} alt="Software Engineering Student"></img>
+                </div>
+                <div className={model ? "model open" : "model"}>
+                    <img alt="im" src={tempImgSrc}/>
+                    <CloseIcon onClick={() => setModel(false)}/>
+                </div>
                 
             </div>
             <Loader type="pacman" />
