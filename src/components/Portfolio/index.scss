@@ -10,7 +10,7 @@
 }
 
 
-.model.open svg{
+.close{
     position: fixed;
     top : 10px;
     right: 10px;
@@ -22,9 +22,33 @@
     cursor: pointer;
 }
 
+.forward{
+    position: fixed;
+    top : 45%;
+    right: 30%;
+    width: 4rem;
+    height: 4rem;
+    padding: 5px;
+    background-color:rgba(0, 0, 0, 0.4) ;
+    color: #fff;
+    cursor: pointer;
+}
+.back{
+    position: fixed;
+    top : 45%;
+    left: 30%;
+    width: 4rem;
+    height: 4rem;
+    padding: 5px;
+    background-color:rgba(0, 0, 0, 0.4) ;
+    color: #fff;
+    cursor: pointer;
+}
+
+
 .model {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;

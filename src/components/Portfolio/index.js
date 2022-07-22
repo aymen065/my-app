@@ -6,6 +6,9 @@ import portfolioData from '../../data/portfolio.json';
 import cv1 from '../../Assest/image/cv1.png'
 import cv2 from '../../Assest/image/2.png'
 import CloseIcon from '@material-ui/icons/Close';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+
 
 
 const Portfolio = () => { 
@@ -23,32 +26,7 @@ const Portfolio = () => {
     }); 
 
 
-   /* const renderPortfolio = (portfolio) => {
-        return (
-            <div className="images-container">
-                {
-                    portfolio.map((port, idx) => {
-                        return (
-                            <div className="image-box" key={idx}>
-                                <img 
-                                src={port.cover}
-                                className="portfolio-image"
-                                alt="portfolio" />
-                                <div className="content">
-                                    <p className="title">{port.title}</p>
-                                    <h4 className="description">{port.description}</h4>
-                                    <button
-                                        className="btn"
-                                        onClick={() => window.open(port.url)}
-                                    >View</button>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
-            </div>
-        );
-    }*/
+   
 
     const [model , setModel] = useState(false);
     const [tempImgSrc , setTempImgSrc] = useState('');
@@ -58,9 +36,17 @@ const Portfolio = () => {
     setTempImgSrc(image);
     setModel(true);
     }
+    const getotherImg = () => {
+        if(tempImgSrc === cv1){
+            setTempImgSrc(cv2);
+        }
+        else{
+            setTempImgSrc(cv1);
+        }
+    }
 
     return (
-        <>
+        <div>
             <div className="container portfolio-page">
                 <h1 className="page-title">
                     <AnimatedLetters
@@ -77,12 +63,15 @@ const Portfolio = () => {
                 </div>
                 <div className={model ? "model open" : "model"}>
                     <img alt="im" src={tempImgSrc}/>
-                    <CloseIcon onClick={() => setModel(false)}/>
+                    <CloseIcon className="close" onClick={() => setModel(false)}/>
+                    <ArrowForwardIosIcon className="forward" onClick={()=> getotherImg()}/>
+                    <ArrowBackIosIcon className="back" onClick={()=> getotherImg()}/>
+
                 </div>
                 
             </div>
             <Loader type="pacman" />
-        </>
+        </div>
     );
 }
 
